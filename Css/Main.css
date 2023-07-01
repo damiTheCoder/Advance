@@ -1,0 +1,958 @@
+
+
+/* Animation for all the divs */
+
+
+
+
+.index-body{
+    
+    overflow-x: hidden !important;
+    background-color: black;
+
+
+
+}
+
+/*  */
+
+/* design For Navigation Menu  starts*/
+
+.begin{
+margin-left: 2rem;
+
+}
+
+.b-btn{
+width: 50% !important;
+}
+
+
+
+
+
+
+
+.hhh{
+color: yellow;
+}
+.offcanvas-end{
+border-radius: 2rem;
+}
+
+.ul{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* for the unordered list */
+.ul-li{
+margin-left: 60px;
+color: white !important;
+
+}
+/* for the link inside the unoredered list */
+.ul-a{
+color: white !important;
+}
+
+.nav-button{
+background-color: blueviolet !important;
+color: rgb(255, 255, 255) !important;
+
+}
+
+
+.nav-bar{
+background-color: #8400ff;
+}
+/* Design For Navigation Menu Ends */
+
+
+/* second nav bar */
+/* the button beside the home header unleashing..... */
+.nav-button3{
+background-color:  rgb(0, 255, 157) !important;
+background-image: linear-gradient();
+color: rgb(0, 0, 0) !important;
+padding-left: 6rem !important;
+padding-right: 6rem !important;
+border-radius: 15px !important;
+box-shadow: -5px 5px   blueviolet;
+}
+
+.btn a{
+text-decoration: none;
+}
+
+/* secodn nav bar ends */
+.home-hr{
+color: #8400ff;
+font-size: 10px;
+font-weight: bolder;
+
+}
+
+/* ALLL MEDIA SCREEM USE CASE */
+@media screen and ( max-width:800px ) {
+.ul-li{
+   
+    margin-bottom: 50px;
+  }
+.nav-button{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.clo{
+    width: 300px;
+    margin-top: 2rem !important;
+}
+.Second-Content h4{
+   text-align: left;
+}
+
+
+.col-ssm{
+    display: none;
+}
+.home1{
+    display: none;
+}
+
+.faqs{
+    margin: 1rem;
+}
+}
+/* general use cases */
+.texty{
+color: #00ff80;
+}
+
+
+@media screen  and (min-width:800px) {
+  
+.Mobile-view{
+    display: none;
+}
+
+
+.Fifth-content-mobile{
+display: none;
+}
+
+.Sixth-Content h2{
+    margin-top: 8rem;
+}
+
+
+
+
+  .faqs{
+    margin: 2rem;
+  }
+
+  .xart{
+    display: none;
+  }
+
+}
+
+
+/* the First content after the Nav bar */
+.First-Content{
+
+padding-top: 40px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+
+
+}
+.lol{
+color: #ffffff;
+}
+
+.loll{
+color: #ffffff;
+}
+
+.llol{
+color: #f6f8f8;
+}
+
+.lal{
+color: #e5e5cb;
+}
+.lel{
+color: #add1ae;
+}
+
+
+
+
+.First-Content div{
+font-size: 50px;
+text-shadow: 1px 1px blueviolet;
+}
+.First-Content p{
+padding-left: 30px;
+}
+/* First Content Ends */
+
+/* Nft price */
+.bord{
+background-color: rgb(0, 0, 0) !important;
+border-radius: 2rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
+font-weight: bold !important;
+color: white;
+margin: 0.2rem;
+/* border: 4px solid rgb(0, 255, 157); */
+}
+/* general use case */
+.cc{
+/* background-image: linear-gradient(to top, rgb(138, 43, 226),rgb(0, 255, 157)); */
+border: 4px solid rgb(0, 255, 157);
+}
+
+.ilist{
+margin: 1rem;
+}
+.list-p{
+color: rgb(255, 255, 255);
+}
+.ftimg{
+border-radius: 2rem;
+border: 1px solid rgb(0, 0, 0);
+}
+.list{
+margin-top: 0.5rem;
+}
+
+/* Second Content Starts */
+.Second-Content{
+margin: 1rem !important;
+}
+.Second-Content h4{
+font-size: 30px;
+
+}
+.image-container{
+background-image: url('/image/download\ \(22\).jpg');
+background-position: center;
+backdrop-filter: blur(5px);
+padding-top: 4rem;
+padding-bottom: 2rem;
+border-radius: 2rem;
+}
+
+
+.h2-s{
+color: rgb(255, 255, 255);
+
+}
+.m23{
+box-shadow: 5px 1px 11px 5px  blueviolet !important;
+}
+
+/* Second Content Ends */
+
+/* Third Content Starts */
+.Third-Section{
+margin: 1rem !important;
+column-gap: 5px;
+}
+
+.Third-Section div{
+background-color: blueviolet !important;
+padding: 15px;
+border-radius: 25px;
+margin-bottom: 10px;
+color: white !important;
+}
+
+.Third-Section div2{
+background-color: blueviolet  !important;
+padding: 15px;
+border-radius: 25px;
+color: white !important;
+}
+/* Third Content ends */
+
+
+
+/* fourth Content Starts */
+
+
+
+.ff{
+background-color: rgb(0, 0, 0) !important;
+padding-top: 3rem !important;
+padding-bottom: 3rem !important;
+}
+
+
+
+
+
+.xd{
+
+
+
+margin: 1rem;
+
+ border-radius: 50rem;
+ padding-left: 5px;
+ padding-right: 5px;
+    
+filter: drop-shadow(10px 10px 10px rgb(39, 38, 39));
+}
+
+
+
+.tex{
+color: rgb(0, 255, 157);
+
+}
+
+
+
+.xd:hover{
+border: 5px solid;
+border-color: blueviolet;
+margin-top: -1rem;
+transition-duration: 2s;
+
+
+}
+/* Fourth Content Ends */
+
+
+/* Fifth Content Starts */
+.FC-Desktop{
+margin: 1rem !important;
+}
+.f2 p{
+font-weight: bold !important;
+font-size: 20px;
+}
+.FC-Desktop h2{
+/* background-color: blueviolet; */
+border-radius: 10px;
+padding: 5px;
+}
+
+.FC-Desktop img{
+border-radius: 25px;
+
+}
+
+.FC-mobile{
+margin:  1rem !important;
+}
+
+.FC-mobile h2{
+background-color: blueviolet;
+border-radius: 10px;
+padding: 5px;
+}
+
+.FC-mobile img{
+border-radius: 25px;
+
+
+}
+
+
+/* Fifth-Content Ends */
+
+
+
+/* Sixth Content Starts */
+
+
+
+.Sixth-Content p{
+font-size: 40px;
+padding: 20px;
+border-radius: 10px;
+color: blueviolet;
+
+
+
+}
+
+.pto{
+  margin-top: 2rem;
+  transform: rotate(20deg);
+}
+
+
+/* Sixth Content Ends */
+.text-primarys{
+color: rgb(255, 255, 255) ;
+}
+
+/* Seventh Content Starst */
+
+.nav-button2{
+background-color: rgb(132, 0, 255) !important;
+color: white !important;
+padding-left: 6rem !important;
+padding-right: 6rem !important;
+border-radius: 15px !important;
+}
+.nav-button2:hover{
+ background-color: rgb(0, 255, 136) !important;
+ color: white;
+ padding-left: 7rem !important;
+ padding-right: 7rem !important;
+ transition-duration: 0.3s;
+ padding-top: 0.5rem;
+ padding-bottom: 0.5rem;
+}
+
+/* Seventh Content Ends */
+
+/* Footer Starts */
+
+
+
+footer {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates columns with a minimum width of 300px and expands to fill available space */
+grid-gap: 20px; /* Adds space between columns */
+background-color: #ae00ff5d; /* Change background color as needed */
+color: #fff; /* Change text color as needed */
+padding: 20px;
+}
+
+.footer-column {
+display: flex;
+flex-direction: column;
+}
+
+.footer-column h3 {
+margin-top: 0; /* Removes default margin */
+font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.footer-column ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.footer-column li {
+margin-bottom: 5px;
+}
+
+.footer-column a {
+color: #fff;
+text-decoration: none;
+}
+
+.colop{
+  color: #ffffff;
+}
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+footer {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduce column width on smaller screens */
+  grid-gap: 10px; /* Reduce gap between columns on smaller screens */
+}
+}
+
+
+
+
+/* SIGN-UP CSS DESIGN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.s-body{
+background-color: rgb(0, 0, 0) !important;
+
+}
+.form-img{
+text-align: left !important;
+justify-self: left !important;
+}
+.content{
+margin-top: 40px;
+}
+.mb-3{
+text-align: left !important;
+}
+
+.mb-5{
+  text-align: center;
+}
+
+.very{
+  margin-top: 9rem;
+}
+
+
+
+.buto{
+
+background-color: rgb(0, 255, 149);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+color: black;
+border-radius: 15px;
+width: 50%;
+}
+
+.Signpage{
+border-radius: 15px;
+padding-top: -10px !important;
+padding-bottom: -10px;
+}
+
+/* space */
+.buto:hover{
+background-color:  rgb(153, 0, 255) ;
+border-color:  rgb(0, 255, 149) ;
+}
+@media screen and (min-width:600px) {
+
+.buto{
+ width: 40%;
+}
+}
+
+
+.fasa{
+margin-top: -60px;
+}
+#rda{
+ margin-top: 70px;
+}
+#maka{
+  
+  background-image: url('/image/blap.jpg');
+  background-size: cover;
+  padding-bottom: 50px;
+  margin-top: -30px;
+
+}
+/* space */
+
+
+#form{
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+#input{
+  background-color: rgb(0, 0, 0) !important;
+
+  border: 3px solid;
+
+}
+/* homepage design xxxxxxxxxxxxxxxxxxxxxx */
+
+
+.textinfo{
+color: blueviolet ;
+
+}
+
+
+.nd{
+background-color: #000000 !important;
+border: 1px solid white;
+
+}
+.home{
+background-color: rgb(0, 0, 0) !important;
+margin-bottom: 10rem;
+
+overflow-x: hidden;
+
+}
+section{
+margin: 20px;
+}
+
+.navv-img{
+background-color: rgb(9, 0, 17);
+}
+
+.nav-border{
+border: 3px solid rgb(0, 0, 0) !important;
+}
+
+/* content of the page design starts */
+
+.wi{
+margin-top: 1.rem;
+
+}
+
+.sliderb{
+width: 25%;
+height: 5px;
+background: rgb(0, 255, 191);
+border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.two{
+border-radius: 3rem;
+}
+
+.ka{
+
+margin: 0.5rem;
+
+border: 1px solid rgb(255, 255, 255);
+background-color: #0000003f;
+border-radius: 3rem;
+padding: 1rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
+color: rgb(255, 255, 255);
+
+
+
+}
+.vmg{
+border-radius: 3rem;
+}
+
+
+.naa{
+margin-top: -2rem;
+}
+
+
+
+.gst{
+margin-top: -3rem;
+
+
+
+color: #fff;
+border: none;
+position: fixed;
+right: 0px !important;
+
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+margin: 1rem;
+}
+
+
+.S-h{
+color: rgb(0, 252, 147);
+}
+
+.chart{
+color: black !important;
+}
+
+
+
+
+
+/* Home 3 starts ---------------------------------------------------------- */
+
+.collapseExample{
+
+
+/* border: 8px solid  rgb(0, 255, 157); */
+font-size: 15px;
+color: rgb(255, 255, 255) !important;
+border-radius: 2rem;
+margin: 0.2rem;
+border: 3px solid white;
+background-color: #000000;
+
+}
+
+
+.ilov{
+border-radius: 3rem;
+border: 2px solid blueviolet;
+margin-bottom: 1rem;
+
+}
+
+
+
+
+
+/* home 3 ends here */
+
+
+/* home 4 starts here -------------------*/
+.btn-primaryy{
+background-color: rgb(0, 252, 147);
+padding-left: 2rem;
+padding-right: 2rem;
+}
+.ghost-img{
+transform: rotate(-10deg);
+}
+/* home 4 ends */
+
+
+
+
+
+/* Faqs Page Design */
+.about-p{
+color: #8400ff;
+font-size: 40px;
+}
+.about-bb{
+color: yellow;
+}
+.about-bbb{
+color: rgb(0, 252, 147);
+}
+.about-b4{
+color: rgb(252, 0, 231);
+}
+
+
+/* About us page */
+.abo{
+color: #000000;
+background-color:  rgb(0, 252, 147);
+box-shadow: -5px 5px blueviolet;
+padding-left:3rem ;
+padding-top: 0.5rem;
+font-size: 20px;
+padding-right: 3rem;
+border-radius: 3rem !important;
+text-align: center !important;
+}
+
+.dg{
+box-shadow: 15px 15px 5px rgb(132, 0, 255);
+border-radius: 3rem;
+margin-top: 4rem;
+transform: rotate(20deg);
+
+}
+
+
+.dgg{
+  border:5px solid black;
+  border-radius: 3rem;
+  margin-top: 1rem;
+  transform: rotate(5deg);
+  margin-bottom: 3rem;
+  
+  }
+
+
+  .dgo{
+    border: 5px solid black;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    transform: rotate(-5deg);
+    margin-bottom: 3rem;
+    
+    }
+
+    .dge{
+      border: 5px solid black;
+      border-radius: 3rem;
+      margin-top: 1rem;
+      transform: rotate(-5deg);
+      margin-bottom: 3rem;
+      
+      }
+
+.Bigd{
+background-image: url('/image/i9.png');
+background-size: cover;
+background-position: center;
+  border-radius: 2rem;
+}
+
+
+/* Game Designs Starts Here xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+.g-1{
+border: 2px solid  ;
+box-shadow: -5px 5px rgb(0, 252, 147) ;
+background-color: blueviolet;
+border-radius: 1rem;
+color: white;
+width: fit-content;
+padding: 0.5rem;
+margin: 1rem;
+margin-left: auto;
+margin-right: auto;
+
+}
+.accordion-content::after {
+
+cursor: pointer;
+padding: 18px;
+width: 100%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.4s; /* Add transition duration for button */
+}
+
+.accordion-content {
+display: none;
+overflow: hidden;
+transition-duration: height 0.5s ease-out; /* Add transition duration for content */
+}
+.g-2{
+
+
+background-color: #cc00ffaf;
+border-radius: 2rem;
+color: white;
+font-size: 20px;
+padding-top: 3rem;
+padding-bottom: 3rem;
+padding-left: 1rem;
+padding-right: 1rem;
+margin: 1rem;
+margin-top: 0.5rem !important;
+}
+
+.g-3{
+
+
+background-color: #00ffaaa9;
+border-radius: 2rem;
+color: white;
+font-size: 20px;
+padding-top: 3rem;
+padding-bottom: 3rem;
+padding-left: 1rem;
+padding-right: 1rem;
+margin: 1rem;
+margin-top: 0.5rem !important;
+}
+
+
+.g-4{
+
+
+background-color: #00ffff98;
+border-radius: 2rem;
+color: white;
+font-size: 20px;
+padding-top: 3rem;
+padding-bottom: 3rem;
+padding-left: 1rem;
+padding-right: 1rem;
+margin: 1rem;
+margin-top: 0.5rem !important;
+}
+
+
+
+/* CSS code */
+/* Style the button that opens the dropdown */
+
+.g11{
+color: blueviolet;
+margin: 1rem;
+}
+
+/* game options design*/
+.e3{
+background-color: #000000 !important;
+border-radius: 3rem;
+margin: 0.5rem;
+width: fit-content;
+}
+.g-button{
+color:  rgb(0, 252, 147) ;
+background-color: blueviolet !important;
+border-radius: 1rem;
+}
+
+.bgw{
+background-color: rgb(0, 255, 157);
+border-radius: 0.5rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 0.1rem;
+padding-bottom: 0.1rem;
+}
+
+.Sub{
+border-radius: 0.5rem;
+background-color:  rgb(132, 0, 255) !important ;
+color: #ffffff;
+padding: 0.2rem;
+width: 90%;
+
+
+}
+
+
+#counter {
+font-size: 60px;
+text-align: center;
+color: white;
+
+}
+
+/* Payment Page Design */
+.mb-4{
+background-color: rgb(0, 0, 0) !important;
+border-bottom-color:  rgb(255, 255, 255) !important;
+border-top-color:  rgb(0, 0, 0) !important;
+border-left-color:  rgb(0, 0, 0) !important;
+border-right-color:  rgb(0, 0, 0) !important;
+border: 3px solid;
+}
+
+.bos{
+text-align: left !important;
+}
+
+.mb1{
+margin:1rem;
+
+padding-bottom: 3rem;
+padding-top: 3rem;
+
+padding-left: 1rem;
+padding-right: 1rem;
+
+}
+
+.pay1{
+  text-align: left !important;
+color:  rgb(153, 0, 255);
+}
+
+
+
+.pays{
+background-image: url('/image/Pas.png');
+background-position: center;
+
+padding-top: 9rem;
+padding-bottom: 7rem;
+
+text-align: left !important;
+
+}
