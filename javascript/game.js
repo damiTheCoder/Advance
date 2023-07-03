@@ -1,9 +1,15 @@
-
-
 // Array of box colors
 const colors = [
-    'red', 'blue', 'green', 'orange', 'purple', 'pink',
-    'red', 'blue', 'green', 'orange', 'purple', 'pink'
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
+    'black','black', 'black','black', 'black','black', 'black','black', 'black','black',
 ];
 
 // Shuffle the colors using Fisher-Yates algorithm
@@ -40,11 +46,16 @@ let currentQuestionIndex = 0;
 // Create the game board
 const gameBoard = document.getElementById('game-board');
 
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < colors.length; i++) {
     const box = document.createElement('div');
     box.className = 'box';
-    box.dataset.color = colors[i];
+    box.style.backgroundColor = colors[i];
     box.addEventListener('click', handleClick);
+
+    if (i === treasureBoxIndex) {
+        box.dataset.treasure = true;
+    }
+
     gameBoard.appendChild(box);
 }
 
@@ -70,12 +81,19 @@ function handleClick() {
     if (answer && answer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
         alert('Correct answer! You can open the box.');
 
-        // Change box color to green
-        box.style.backgroundColor = 'white';
-
-        // Check if the box has a treasure
-        if (box.dataset.color === 'blueviolet') {
-            alert('Congratulations! You found the treasure!');
+        // Check if the box has the treasure
+        if (box.dataset.treasure) {
+            box.style.backgroundColor = 'yellow';
+            const email = prompt('Congratulations! You found the treasure! Please enter your email:');
+            if (email) {
+                // Perform further actions with the email (e.g., store it, send it to a server, etc.)
+                alert(`Thank you for providing your email: ${email}`);
+            } else {
+                alert('Email not provided. Treasure found, but email not collected.');
+            }
+        } else {
+            // Change box color to green for correct answer
+            box.style.backgroundColor = 'blueviolet';
         }
 
         // Add box to opened boxes
@@ -109,6 +127,11 @@ function promptWithOptions(question, options) {
 
     return options[optionIndex - 1];
 }
+
+
+
+
+
 
 
 // ////////////////////////////////////////////////
