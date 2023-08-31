@@ -10,294 +10,303 @@
     <link rel="stylesheet" href="./css/Main.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <style>
-  
-        #chat-btn{
-            position: fixed;
-             top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            z-index: 9999;
-            font-weight: bold;
-            background-color: rgb(37, 41, 40);
-            color: rgb(255, 255, 255);
-             border: 4px solid blue;
-             border-radius: 5px;
-             padding-top: 5px;
-             padding-bottom: 5px;
-           cursor: pointer;
-    }
-
-		.chat-message {
-			color: #00ffbf;
-      
-			padding: 10px;
-
-			margin-bottom: 10px;
-		}
-
-     .chat-offcanvas {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    border: 2px solid  white;
-    border-radius: 2rem;
-    left: -300px;
-    width: 300px;
-    color: #ffffff;
-    background-color: #000000;
-    overflow-y: auto;
-    padding: 20px;
-    transition: left 0.3s ease;
-    z-index: 9999; /* Add a high z-index value to ensure the off-canvas body stays on top */
-}
-
-		.chat-offcanvas.active {
-			left: 0;
-		}
-
-		.chat-offcanvas-toggle {
-            position: fixed;
-    bottom: 25%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 9999;
-    background-color: rgb(37, 41, 40);
-    border: 4px solid blue;
-    color: white;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    cursor: pointer;
-			/* cursor: pointer; */
-		}
-
-		.chat-offcanvas-title {
-			margin-top: 0;
-		}
-
-		.chat-offcanvas-cancel {
-			margin-top: 10px;
-			background-color: #000000;
-			border: none;
-    
-			padding: 10px;
-			cursor: pointer;
-		}
-
-      
-
-      
-.box {
-    width: 50px;
-    height: 50px;
-  
-    display: inline-block;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 1rem;
-}
-
-
-#game-board {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 2rem;
-}
-
-.box {
-width: 18%;
-padding-bottom: 18%;
-margin: 1%;
-background-color: rgb(0, 0, 0);
-border: 3px solid white;
-border-radius: 1.4rem;
-cursor: pointer;
-
-}
-
-@media (max-width: 768px) {
-.box {
-width: 15.33%;
-padding-bottom: 15.33%;
-}
-}
-
-@media (max-width: 576px) {
-.box {
-width: 15%;
-padding-bottom: 15%;
-}
-}
-
-@media (max-width: 400px) {
-.box {
-width: 15%;
-padding-bottom: 15%;
-}
-}
-
-	</style>
+   
 </head>
-<body class="home bg-white ">
+<body class="home bgo">
   
+  <section class="MOB">
     <div class="bg-transparent ">
-        <nav class="navbar navbar-dark  bg-black fixed-top">
-          <div class="container-fluid">
-            <h4 class="textinfo"><b>drop-E</b></h4>
+      <nav class="navbar navbar-dark  bg-transparent fixed-top">
+        <div class="container-fluid">
+          <h4 class="textinfo"><b>drop-E</b></h4>
 
-      
-            <a class="navbar-brand text-center" href="#"><img  src="./image/logo2.png" width="75">
-            
-            
-            </a>
-      
-      
-      
+    
+          <a class="navbar-brand text-center" href="#"><img  src="./image/logo2.png" width="75">
           
           
-            <button class=" nav-border navbar-toggler text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-              <img  src="./image/menu (1).png">
-            </button>
+          </a>
+    
+    
+    
+        
+        
+          <button class=" nav-border navbar-toggler text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <img  src="./image/menu (1).png">
+          </button>
 
 
 
 
 
-            <div class="offcanvas  offcanvas-end nd text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header ">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="  rounded" src="./image/logo2.png" width="75"></h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body cano">
-                <ul class="navbar-nav justify-content-end text-black  flex-grow-1 ">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.html"><h3 class="nav-item-h"><b>
-                      <img class=" rounded " src="/image/box.png"> home
-                    </b></h3></a>
-                  </li>
-                  <br>
-                  <hr>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="game.html"><h3 class="nav-item-h" ><b>
-                      <img class="rounded" src="/image/games.png"> game
-                    </b></h3></a>
-                  </li>
-                 <br>
-                 <hr>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="payment.html"><h3 class="nav-item-h"><b>
-                      <img class="rounded" src="/image/cash.png"> Payment
-                    </b></h3></a>
-                  </li>
-                  <br>
-                  <hr>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./winners.html"><h3 class="nav-item-h"><b>
-                      <img class=" rounded" src="/image/shit.jpeg" width="40px"> Winners
-                    </b></h3></a>
-                  </li>
-                  <br>
-                  <hr>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><h4 class="nav-item-h"><b>
-                      <img class="rounded" src="/image/cash.png"> Payment reciept for winners
-                    </b></h4></a>
-                  </li>
-                  <br>
-                  <hr>
+          <div class="offcanvas  offcanvas-end nd text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header ">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="  rounded" src="./image/logo2.png" width="75"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body cano">
+              <ul class="navbar-nav justify-content-end text-black  flex-grow-1 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html"><h3 class="nav-item-h dio"><b>
+                    <img class=" rounded " src="/image/box.png"> home
+                  </b></h3></a>
+                </li>
+                <br>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="game.html"><h3 class="nav-item-h dio" ><b>
+                    <img class="rounded" src="/image/games.png"> game
+                  </b></h3></a>
+                </li>
+               <br>
+               <hr>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="payment.html"><h3 class="nav-item-h dio"><b>
+                    <img class="rounded" src="/image/cash.png"> Payment
+                  </b></h3></a>
+                </li>
+                <br>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./winners.html"><h3 class="nav-item-h dio"><b>
+                    <img class=" rounded" src="./image/win-gesture (1).png" width="40px"> Winners
+                  </b></h3></a>
+                </li>
+                <br>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link active SOKK" aria-current="page" href="#"><h4 class="nav-item-h"><b>
+                    <img class="rounded" src="/image/cash.png"> PaymentRecieptForWinners
+                  </b></h4></a>
+                </li>
+                <br>
+                <hr>
 
 
 
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><h3 class="nav-item-h hhh"><b>
-                      Refer friends
-                    </b></h3></a>
-                  </li>
-               
-      
-                
-            
-              </div>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><h3 class="nav-item-h hhh"><b>
+                    Refer friends
+                  </b></h3></a>
+                </li>
+             
+    
+              
+          
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </div>
 
 
 <br><br><br><br><br>
 
+<!-- Content starts -->
+
+
+
  <!-- Content starts -->
 
- <button id="chat-btn"  >Chat others</button>
- <button   class="chat-offcanvas-toggle">View Chat</button>
- <div class="offcanvas">
-     <h2 class="offcanvas-title">Navigation</h2>
-     
- </div>
-
- <div class="chat-offcanvas">
-     <h2 class="chat-offcanvas-title">Chat Messages</h2>
-     <!-- Chat messages will be added here -->
-     
-     <button class="chat-offcanvas-cancel bg-black"><img src="./image/x.png"></button>
-     <br><br>
- </div>
-
-  <!-- chat system ends -->
-
- <!-- Body of the code -->
- <div><h1 class="textinfo text-center"><b>Winners</b></h1></div>
  <br>
 
-<div>
-    <div class="container-fluid text-center"><img class="vmgg" src="./image/dog (2).jpg" width="90px"></div>
-    <br>
-    <h3 class="text-white text-center">MICY GLITCH</h3>
-    <h1 class="text-center text-white"> $50 </h1>
-    <div class="text-center textinfo"><h5>whatsapp him <a href="#"><img src="./image/next.png" width="40"></a> </h5></div>
-</div>
-<!-- //////////////// -->
-<br><br>
+ <!-- form Begins Here -->
+ 
+ <div class="row text-white brod">
+  <div class="col">
+    <img class="vmg" src="./image/Pepinilo.jpg" width="70px"> 
+    <h3><b>Adeshola Emmanuel</b></h3>
+  </div>
 
-<div>
-    <div class="container-fluid text-center"><img class="vmp" src="./image/dog (4).jpg" width="90px"></div>
-    <br>
-    <h3 class="text-white text-center">CYPHER X</h3>
-    <h1 class="text-center text-white"> $50 </h1>
-    <div class="text-center textinfo"><h5>whatsapp him <a href="#"><img src="./image/next.png" width="40"></a> </h5></div>
+  <div class="col">
+     <a href="">Whatsapp the player <img src="./image/next.png" width="50px"></a>
+  </div>
 </div>
 
 <br><br>
 
-<h2 class="text-center text-white">Dont give up your name can be here oneday</h2>
+<div class="row text-white brod">
+  <div class="col">
+    <img class="vmg" src="./image/dog (1).jpg" width="70px"> 
+    <h3><b>Cytron Hunter</b></h3>
+  </div>
+
+  <div class="col">
+     <a href="">Whatsapp the player <img src="./image/next.png" width="50px"></a>
+  </div>
+</div>
+ <!-- Form Ends -->
+ 
+ <!-- Submit Button -->
+
+  
+
+</div>
+  </section>
+
+  
+ 
+    <!-- /////////////////////// -->
+
+<!-- ////////////// Web Version of the Home //////////////////////////////////////////////////////////////// -->
+
+<section class=" WEB">
+  
+
+ 
+  <div class="row  webo   ">
+
+    <div class="col text-left">
+    <div >  <h2 class="textinfo"><b>drop-E</b></h2></div>
+    </div>
+  
+    <div class="col text-center">
+   <div >  <h2 class="text-white"><b>NFT GAMING</b></h2></div>
+    </div>
+  
+    <div class="col text-end">
+      <div class="bg-black" > <img class="rounded-5" src="./image/dog (1).png" width="50">  
+        <img class="rounded-5" src="./image/dog (3).jpg" width="50"> 
+         <img class="rounded-5" src="./image/dog (1).jpg" width="50"></div>
+    </div>
+  
+  </div>
+ 
 
 
+<!-- ................................................................... -->
+<br>
+<div class="row">
+
+  <div class=" col text-left ">
+  <div class="maj-row">
+    <ul class="nav flex-column majj">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./home.html"> <h4 class="text-white dio"> <img src="./image/box.png" >
+          <b> Home</b></h4>   </a>
+      </li>
+      <br>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./game.html"><h4 class="nav-item-h text-white dio" ><b>
+          <img class="rounded" src="/image/games.png"> game
+        </b></h4></a>
+      </li>
+      <br>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./payment.html"><h4 class="nav-item-h text-white dio" ><b>
+          <img class="rounded" src="/image/cash.png"> Payment
+        </b></h4></a>
+      </li>
+      <br>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./winners.html"><h4 class="nav-item-h text-white dio" ><b>
+          <img class=" rounded" src="./image/win-gesture (1).png" width="40px"> Winners
+        </b></h4></a>
+      </li>
+    </ul>
+<br>
+
+<div class="container">
+  <p class="text-white">
+    Check out the payments  reciepts
+    <p class="text-white">we made to previous winners</p>
+  </p>
+</div>
+
+    
+    <div class="container">
+      <img class=" weno" src="./image/lono.png" width="150px">
+    </div>
+    <br>
+    <div class="text-left">
+      <a class=" nav-a-btn" href="./sign_up.html"> <button class="btn  nav-button2 " type="submit"><h5><b>reciepts</b></h5></button></a>
+     </div>
+  </div>
+   
+
+  </div>
+
+  <!-- ......................................................................... -->
+
+<div class=" col text-left col-md-7 clod">
+
+<div class="row text-white brod">
+  <div class="col">
+    <img class="vmg" src="./image/Pepinilo.jpg" width="70px"> 
+    <h3><b>Adeshola Emmanuel</b></h3>
+  </div>
+
+  <div class="col">
+     <a href="">Whatsapp the player <img src="./image/next.png" width="50px"></a>
+  </div>
+</div>
+
+<br><br>
+
+<div class="row text-white brod">
+  <div class="col">
+    <img class="vmg" src="./image/dog (1).jpg" width="70px"> 
+    <h3><b>Cytron Hunter</b></h3>
+  </div>
+
+  <div class="col">
+     <a href="">Whatsapp the player <img src="./image/next.png" width="50px"></a>
+  </div>
+</div>
 
 
  
-  
+ 
+</div>
+
+<!-- ....................................................................................... -->
+
+  <div class=" col text-end ">
+   <div class="">
      
+    <h3 class="text-white text-left container">Read Instruction</h3>
+    <div  >
+      <div class="card card-body text-white text-center ins ">
+        <p><b> 1 . Purchase Gamtag [900 NGN] in order to play the game</b></p>
+        
+      <p><b> 2 .   Riddlles will be given for you to solve</b></p>
+     
+      <p><b>3 .  For every  Riddlle you answer correctly you will be able to open a BOX</b></p>
+     
+      <p><b>4 .  The lucky person to open the right Box where the Cash is hidden Wins</b></p>
+     
+      <p><b>5 .  The  winner will be paid $100 - $2,000  depending on the game Volume</b></p>
+     
+     
+     
+      </div>
+     </div>
+     
+     
+     <!-- //// -->
+     <div class="card card-body text-left text-white ins  ">
+     <p><b>6 .After Purchasing the GameTag your gamecode will be sent to you email</b></p>
+     <p><b>7. when purchasing the gameTag input your email so has to recieve the gamecode</b></p>
+     <p><b>8. Always Purchase Your GameTag 2 days or 1 day before the gaming date.</b></p>
+     <p><b>7. So as to recieve the gamecode ontime</b></p>
+     
+     
+     
+     </div>
+
+  </div>
+
+   </div>
+</div>
+
+</section>  
    
- 
-  
-
-    
-
-    
-   
-    
- 
-  
-   
 
 
- <script src="./javascript/game.js"></script>
 
+
+    <script src="./javascript/game.js"></script>  
 <script src="./javascript/bootstrap.min.js"></script>  
-
+  
 </body>
 
 </html>

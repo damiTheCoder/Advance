@@ -8,7 +8,7 @@
 .index-body{
     
     overflow-x: hidden !important;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 
 
 
@@ -18,10 +18,7 @@
 
 /* design For Navigation Menu  starts*/
 
-.begin{
-margin-left: 2rem;
 
-}
 
 .b-btn{
 width: 50% !important;
@@ -47,10 +44,22 @@ margin-right: auto;
 }
 /* for the unordered list */
 .ul-li{
-margin-left: 60px;
+margin-left: 6rem;
 color: white !important;
+font-size: 1rem;
+font-weight: bold;
+
 
 }
+.ul-li:hover{
+  background-color: blueviolet;
+  font-size: 2rem;
+  border-radius:1rem;
+  transition-duration: 0.5s;
+  
+  }
+
+
 /* for the link inside the unoredered list */
 .ul-a{
 color: white !important;
@@ -122,7 +131,7 @@ color: rgb(0, 0, 0) !important;
 padding-left: 6rem !important;
 padding-right: 6rem !important;
 border-radius: 15px !important;
-box-shadow: -5px 5px   blueviolet;
+
 }
 
 .btn a{
@@ -179,7 +188,8 @@ color: #00ff80;
 
 
 @media screen  and (min-width:800px) {
-  
+
+
 .Mobile-view{
     display: none;
 }
@@ -229,23 +239,56 @@ color: #f6f8f8;
 }
 
 .lal{
-color: #e5e5cb;
+color: #ffffff;
 }
 .lel{
-color: #add1ae;
+color: #00ff80;
 }
 
 
 
 
 .First-Content div{
-font-size: 50px;
-text-shadow: 1px 1px blueviolet;
+font-size: 4rem;
+
 }
+.First-Contentt div{
+  font-size: 3rem;
+  
+  }
+
 .First-Content p{
 padding-left: 30px;
 }
+
+.dio:hover{
+
+  background-color: blueviolet;
+  padding: 1rem;
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+  
+}
 /* First Content Ends */
+/* Second Content */
+.cepta{
+
+  
+  color: #00ff80;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+ 
+}
+.cop{
+  padding-top: 1rem;
+}
+.cep{
+  font-size: 2rem;
+  
+}
+
+
 
 /* Nft price */
 .bord{
@@ -255,7 +298,7 @@ padding-top: 1rem;
 padding-bottom: 1rem;
 font-weight: bold !important;
 color: white;
-margin: 0.2rem;
+
 /* border: 4px solid rgb(0, 255, 157); */
 }
 /* general use case */
@@ -264,8 +307,14 @@ margin: 0.2rem;
 border: 4px solid rgb(0, 255, 157);
 }
 
+.ins{
+  background-color: #100e1a;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .ilist{
-margin: 1rem;
+margin-bottom: 1rem;
 background-color: #100e1a;
 padding: 0.5rem;
 border-radius: 1rem;
@@ -499,39 +548,6 @@ border-radius: 15px !important;
 
 
 
-footer {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates columns with a minimum width of 300px and expands to fill available space */
-grid-gap: 20px; /* Adds space between columns */
-background-color: #ae00ff5d; /* Change background color as needed */
-color: #fff; /* Change text color as needed */
-padding: 20px;
-}
-
-.footer-column {
-display: flex;
-flex-direction: column;
-}
-
-.footer-column h3 {
-margin-top: 0; /* Removes default margin */
-font-size: 1.2rem; /* Adjust font size as needed */
-}
-
-.footer-column ul {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-.footer-column li {
-margin-bottom: 5px;
-}
-
-.footer-column a {
-color: #fff;
-text-decoration: none;
-}
 
 .colop{
   color: #ffffff;
@@ -639,12 +655,12 @@ margin-top: -60px;
 
 
 #input{
-  background-color: rgb(0, 0, 0) !important;
-
-  border: 3px solid;
+  background-color: rgb(48, 47, 47) !important;
+  border: none !important;
+  
 
 }
-/* homepage design xxxxxxxxxxxxxxxxxxxxxx */
+/* homepage design xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 .textinfo{
@@ -655,9 +671,26 @@ color: blueviolet ;
 
 .nd{
 background-color: #000000 !important;
-border: 1px solid white;
+
+
 
 }
+
+.SOK:hover{
+  background-color: blueviolet;
+  padding: 1rem !important;
+  
+  border-radius: 1rem;
+  transition-duration: 0.8s !important;
+}
+
+.SOKK{
+  border: 2px solid blueviolet;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  /* background-color: blueviolet; */
+}
+
 .home{
 background-color: rgb(0, 0, 0) !important;
 margin-bottom: 10rem;
@@ -697,21 +730,13 @@ margin-right: auto;
 border-radius: 3rem;
 }
 
-.ka{
-
-margin: 0.5rem;
-
-
-background-color: #100e1a;
-border-radius: 2.2rem;
-padding: 1rem;
-padding-top: 1rem;
-padding-bottom: 1rem;
-color: rgb(255, 255, 255);
-
-
-
+.koi{
+  background-color: #100e1a;
+  padding: 2rem;
+  border-radius: 2rem;
 }
+
+
 .vmg{
 border-radius: 3rem;
 }
@@ -882,7 +907,8 @@ transform: rotate(20deg);
 background-image: url('/image/i9.png');
 background-size: cover;
 background-position: center;
-  border-radius: 2rem;
+border-radius: 2rem;
+padding-top: 1rem;
 }
 
 
@@ -918,51 +944,11 @@ display: none;
 overflow: hidden;
 transition-duration: height 0.5s ease-out; /* Add transition duration for content */
 }
-.g-2{
 
 
-background-color: #cc00ffaf;
-border-radius: 2rem;
-color: white;
-font-size: 20px;
-padding-top: 3rem;
-padding-bottom: 3rem;
-padding-left: 1rem;
-padding-right: 1rem;
-margin: 1rem;
-margin-top: 0.5rem !important;
-}
-
-.g-3{
 
 
-background-color: #00ffaaa9;
-border-radius: 2rem;
-color: white;
-font-size: 20px;
-padding-top: 3rem;
-padding-bottom: 3rem;
-padding-left: 1rem;
-padding-right: 1rem;
-margin: 1rem;
-margin-top: 0.5rem !important;
-}
 
-
-.g-4{
-
-
-background-color: #00ffff98;
-border-radius: 2rem;
-color: white;
-font-size: 20px;
-padding-top: 3rem;
-padding-bottom: 3rem;
-padding-left: 1rem;
-padding-right: 1rem;
-margin: 1rem;
-margin-top: 0.5rem !important;
-}
 
 
 
@@ -1008,36 +994,32 @@ width: 90%;
 
 
 #counter {
-font-size: 60px;
-text-align: center;
-color: white;
+font-size: 4rem;
+
+color: rgb(0, 255, 98);
 
 }
+
+
+#counterr{
+  font-size: 4rem;
+  
+  color: rgb(0, 255, 98);
+  
+  }
 
 /* Payment Page Design */
 .mb-4{
 background-color: rgb(0, 0, 0) !important;
-border-bottom-color:  rgb(255, 255, 255) !important;
-border-top-color:  rgb(0, 0, 0) !important;
-border-left-color:  rgb(0, 0, 0) !important;
-border-right-color:  rgb(0, 0, 0) !important;
-border: 3px solid;
+
+border: 3px solid white;
 }
 
 .bos{
 text-align: left !important;
 }
 
-.mb1{
-margin:1rem;
 
-padding-bottom: 3rem;
-padding-top: 3rem;
-
-padding-left: 1rem;
-padding-right: 1rem;
-
-}
 
 .pay1{
   text-align: left !important;
@@ -1056,3 +1038,122 @@ padding-bottom: 7rem;
 text-align: left !important;
 
 }
+
+
+/* Terms Css design */
+.term-p{
+   
+   color: white;
+   
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////// web Version Csss for the home */
+
+@media (max-width: 1000px) {
+   .WEB{
+    display: none;
+   }
+  }
+
+@media (min-width: 1000px) {
+   .MOB{
+    display: none;
+   }
+  }
+
+.maj-row{
+  position: fixed ;
+  margin-top: 1rem !important;
+  
+  
+}
+.majj{
+  background-color: #100e1a;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  padding-top: 1rem;
+}
+.majjx{
+  
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  
+}
+
+.vio{
+  background-color: #100e1a;
+  border: #00ff62 1px solid;
+  padding-top: 0.5rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  border-radius: 0.5rem;
+  text-align: center !important;
+}
+
+.sfd{
+  background-color: #100e1a;
+  margin-left: 0.4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  column-gap: 5px !important;
+  border-radius: 1.5rem;
+}
+
+.webo{
+  width: 100%;
+  position: fixed;
+  top: 0.5px;
+  margin-bottom: 1rem !important;
+  background-color: #000000;
+}
+
+
+.weno{
+  margin-top: 0.5rem;
+  
+}
+
+.clod{
+  margin-top: 2rem;
+}
+
+.brod{
+  background-color: #100e1a;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.MFG{
+  background-color: #100e1a;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.ment{
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #100e1a;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+

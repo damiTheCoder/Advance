@@ -189,3 +189,5 @@ accordions.forEach(function(accordion) {
   
 // Animation for all divs
 
+// gggggggggggggggggggggggggggggggggggggggggg Desktop view for Everything gggggggggggggggggggggggggggggg
+
